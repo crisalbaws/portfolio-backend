@@ -5,6 +5,7 @@ import { Entity, PrimaryGeneratedColumn, Column, JoinColumn, OneToMany, ManyToOn
 
 @Entity({ name: 'users' })
 export class User {
+    
     @PrimaryGeneratedColumn('uuid')
     id: string;
 

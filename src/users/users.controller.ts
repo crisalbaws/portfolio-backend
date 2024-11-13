@@ -16,8 +16,8 @@ export class UsersController {
         private tknServ: TokenService
     ) { }
 
-    @UseGuards(JwtAuthGuard)
-    @ApiBearerAuth()
+    // @UseGuards(JwtAuthGuard)
+    // @ApiBearerAuth()
     @Get()
     getUsers(): Promise<ApiResponse> {
         return this.usersService.getUsers();
